@@ -1,6 +1,6 @@
 import { initializeApp } from 'firebase/app'
 import {
-  getFirestore, collection, getDocs, doc,
+  getFirestore, collection, getDocs,
   addDoc
 } from 'firebase/firestore'
 
@@ -39,6 +39,14 @@ getDocs(colRef)
 const addBookForm = document.querySelector('.add')
 addBookForm.addEventListener('submt', (e)=> {
   e.preventDefault()
+
+  addDoc(colRef, {
+    title: addBookForm.title.value,
+    author: addBookForm.author.value,
+  })
+  .then(() => {
+    addBookForm.reset()
+  })
 })
 
 //deleting  documents
