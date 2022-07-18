@@ -1,0 +1,21 @@
+body{
+  background: #eeedec;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.8em;
+  align-items: center;
+
+}
+.container{
+  max-width: 500px;
+}
+
+button {
+  font-size: 1em;
+  color: #fff;
+  padding: 8px 20px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #58249c;
+  cursor: pointer;
+  text-decoration: none;
+}
